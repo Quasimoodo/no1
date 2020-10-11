@@ -4,7 +4,7 @@ class analyze_worker
 {
     private boolean error_flag = false;
     private String keyword[]={"BEGIN","END","FOR","IF","THEN","ELSE"};
-    private String keyword_ans[]={"Begin","End","For","If","Then","Else"};
+    private String keyword_ans[]={"Begin ","End ","For ","If ","Then ","Else "};
     void work(char[] chars)//working function
     {
         String letter="";
