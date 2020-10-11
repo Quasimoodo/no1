@@ -52,7 +52,13 @@ class analyze_worker
             else if (ch>='0'&&ch<='9')
             {
                 while(ch=='0')//ignore 0 behind
-                ch=chars[++i];
+                {
+                    ch=chars[++i];
+                    if(!(ch>='0'&&ch<='9'))
+                    letter+='0';
+
+                }
+
                 while(ch>='0'&&ch<='9')
                 {
                     letter+=ch;
@@ -107,7 +113,7 @@ public class Word_anzer
         File file= new File(args[0]);
         FileReader reader=new FileReader(file);
         int length=(int)file.length();
-        char buf[]=new char[length+100];
+        char buf[]=new char[length+1];
         reader.read(buf);
         reader.close();
         analyze_worker now= new analyze_worker();
