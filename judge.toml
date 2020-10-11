@@ -1,5 +1,5 @@
 [jobs.pascal_lex]
 image = { source = "dockerfile", path = ".", tag = "my-pascal-lexer" }
 run = [
-  "java my.path.MyClass $input",
+  "java my.path.Word_anzer $input",
 ]
