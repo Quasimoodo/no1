@@ -16,7 +16,7 @@ class analyze_worker
 
             ch=chars[i];
             letter="";// origianl state placed
-            if(ch==' '||ch=='\t'||ch=='\n'||ch=='\r')
+            if(ch==' '||ch=='\t'||ch=='\n'||ch=='\r'||ch=='\u0000')
             {
                 //do nothing
             }
@@ -98,7 +98,7 @@ class analyze_worker
                     break;
                 default: 
                     error_flag=true;
-                    System.out.println(ch);
+                    System.out.println("Unknown");
 
             }
             
