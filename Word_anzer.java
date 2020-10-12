@@ -98,7 +98,7 @@ class analyze_worker
                     break;
                 default: 
                     error_flag=true;
-                    System.out.println("Unknown");
+                 //   System.out.println("Unknown");
 
             }
             
